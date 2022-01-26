@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4444;
 DB();
 
 const corsOptions = {
-    origin: process.env.ALLOWED_CLEINTS.split(',')
+    origin: "*",
 }
 
 app.use(cors(corsOptions));
